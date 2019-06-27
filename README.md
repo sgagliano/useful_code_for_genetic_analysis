@@ -1,56 +1,56 @@
 # useful_unix_one_liners
 
 #Find replace; e.g. Find X, replace with 23:
-sed -i 's/X/23/' file.txt
+`sed -i 's/X/23/' file.txt`
 
 #change space to tab
-perl -p -i -e 's/ /\t/g' file.txt
+`perl -p -i -e 's/ /\t/g' file.txt`
 
 #add a prefix to the beginning of each line
-sed -i -e 's/^/prefix/' file.txt
+`sed -i -e 's/^/prefix/' file.txt`
 
 #add a suffix to the end of each line, and write it out as a new file
-sed 's/$/suffix/' file.txt > new-file.txt
+`sed 's/$/suffix/' file.txt > new-file.txt`
 
 #print the number of individuals in a VCF.gz file
-gzip -dc file.vcf.gz | grep "^#CHROM" -m1 | tr "\t" "\n" | tail -n+10 | wc -l
+`gzip -dc file.vcf.gz | grep "^#CHROM" -m1 | tr "\t" "\n" | tail -n+10 | wc -l`
 
 #grep with colour
-gzip -dc RefChr20.vcf.gz | grep -F "0.578,0.414" --color
+`gzip -dc RefChr20.vcf.gz | grep -F "0.578,0.414" --color`
 
-less -S #print lines nicely
-ls -a #see hidden files too
-ls -l #see permissions
-ls -lh #see file size
+`less -S` #print lines nicely
+`ls -a` #see hidden files too
+`ls -l` #see permissions
+`ls -lh` #see file size
 
 #find in the current directory file.txt
-find . -name "file.txt" 
+`find . -name "file.txt"` 
 
 #disc usage 
-du -hc *.bgz #human readable total size of the bgz files
-df -lm . #in the folder
+`du -hc *.bgz` #human readable total size of the bgz files
+`df -lm .` #in the folder
 
 #before sort to be followed by join
-LC_ALL=C; export LC_ALL
+`LC_ALL=C; export LC_ALL`
 
 #append an extra column with a string of 1s
-awk '{print $0,"1" }' file.txt > file1.txt
+`awk '{print $0,"1" }' file.txt > file1.txt`
 
 #change uppercase to lowercase
-tr '[:upper:]' '[:lower:]' < inputfile.txt > outputfile.txt
+`tr '[:upper:]' '[:lower:]' < inputfile.txt > outputfile.txt`
 
 #Beagle output extract at position 33514465
-zgrep -E "CHROM|33514465" snpcall/vcfs/chr20/chr20.filtered.vcf.gz  | cut -f 2,4,5,9,14
+`zgrep -E "CHROM|33514465" chr20.vcf.gz  | cut -f 2,4,5,9,14`
 #Note: for genotypes 0=Ref; 1=Alt
 
 #count how many lines in a vcf.gz, not including lines that start with #
-zgrep -vE ^# file.vcf.gz | wc -l
+`zgrep -vE ^# file.vcf.gz | wc -l`
 
-#extract only indels
-zgrep -v -E "^[^:]+:[0-9]+_[ATCG]/[ATCG]_" file.gz | less -S
+#view only indels
+`zgrep -v -E "^[^:]+:[0-9]+_[ATCG]/[ATCG]_" file.gz | less -S`
 
-#extract only A/T SNPs
-zgrep -E "^22:[0-9]+_A/T" file.gz | less -S
+#view only A/T SNPs
+`zgrep -E "^22:[0-9]+_A/T" file.gz | less -S`
 
-#extract line for a variant (e.g. chr22:16188597) in tabixed vcf.gz 
-tabix Mytabixedfile.vcf.gz chr22:16188597 | less -S
+#view line for a variant (e.g. chr22:16188597) in tabixed vcf.gz 
+`tabix Mytabixedfile.vcf.gz chr22:16188597 | less -S`
