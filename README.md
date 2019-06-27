@@ -3,29 +3,29 @@
 ##### Find replace; e.g. Find X, replace with 23
 `sed -i 's/X/23/' file.txt` 
 
-#####
-`perl -p -i -e 's/ /\t/g' file.txt` #change space to tab
+##### change space to tab
+`perl -p -i -e 's/ /\t/g' file.txt` 
 
-#####
-`sed -i -e 's/^/prefix/' file.txt` #add a prefix to the beginning of each line
+##### add a prefix to the beginning of each line
+`sed -i -e 's/^/prefix/' file.txt` 
 
-#####
-`sed 's/$/suffix/' file.txt > new-file.txt` #add a suffix to the end of each line, and write it out as a new file
+##### add a suffix to the end of each line, and write it out as a new file
+`sed 's/$/suffix/' file.txt > new-file.txt`
 
-#####
-`gzip -dc file.vcf.gz | grep "^#CHROM" -m1 | tr "\t" "\n" | tail -n+10 | wc -l` #print the number of individuals in a VCF.gz file
+##### print the number of individuals in a VCF.gz file
+`gzip -dc file.vcf.gz | grep "^#CHROM" -m1 | tr "\t" "\n" | tail -n+10 | wc -l`
 
-#####
-`gzip -dc RefChr20.vcf.gz | grep -F "0.578,0.414" --color` #grep with colour
+##### grep with colour
+`gzip -dc RefChr20.vcf.gz | grep -F "0.578,0.414" --color`
 
-#####
+##### some `less` and `ls` arguments
 `less -S` #print lines nicely
 `ls -a` #see hidden files too
 `ls -l` #see permissions
 `ls -lh` #see file size
 
-#####
-`find . -name "file.txt"` #find in the current directory file.txt
+##### find in the current directory file.txt
+`find . -name "file.txt"`
 
 ##### disc usage 
 `du -hc *.bgz` #human readable total size of the bgz files
@@ -42,7 +42,7 @@
 
 ##### Beagle output extract at position 33514465
 `zgrep -E "CHROM|33514465" chr20.vcf.gz  | cut -f 2,4,5,9,14`
-####### Note: for genotypes 0=Ref; 1=Alt
+#Note: for genotypes 0=Ref; 1=Alt
 
 ##### count how many lines in a vcf.gz, not including lines that start with #
 `zgrep -vE ^# file.vcf.gz | wc -l`
