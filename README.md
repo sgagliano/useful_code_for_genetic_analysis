@@ -13,9 +13,9 @@
 `sed 's/$/suffix/' file.txt > new-file.txt`
 
 ##### print the number of individuals in a VCF.gz file
-######## option 1
+###### option 1
 `gzip -dc file.vcf.gz | grep "^#CHROM" -m1 | tr "\t" "\n" | tail -n+10 | wc -l`
-######## option 2
+###### option 2
 `bcftools view -h file.vcf.gz | tail -n1 | cut -f10- | wc -w`
 
 ##### grep with colour
