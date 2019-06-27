@@ -14,6 +14,8 @@
 
 ##### print the number of individuals in a VCF.gz file
 `gzip -dc file.vcf.gz | grep "^#CHROM" -m1 | tr "\t" "\n" | tail -n+10 | wc -l`
+#alternatively,
+`bcftools view -h file.vcf.gz | tail -n1 | cut -f10- | wc -w`
 
 ##### grep with colour
 `gzip -dc RefChr20.vcf.gz | grep -F "0.578,0.414" --color`
