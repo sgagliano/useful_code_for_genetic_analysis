@@ -1,4 +1,4 @@
-# useful_unix_one_liners
+# useful_unix_one_liners_and_more
 
 `sed -i 's/X/23/' file.txt` #Find replace; e.g. Find X, replace with 23
 
