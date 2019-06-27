@@ -13,26 +13,24 @@
 `sed 's/$/suffix/' file.txt > new-file.txt`
 
 ##### print the number of individuals in a VCF.gz file
-###### option 1
-`gzip -dc file.vcf.gz | grep "^#CHROM" -m1 | tr "\t" "\n" | tail -n+10 | wc -l`
-###### option 2
-`bcftools view -h file.vcf.gz | tail -n1 | cut -f10- | wc -w`
+###### option 1 `gzip -dc file.vcf.gz | grep "^#CHROM" -m1 | tr "\t" "\n" | tail -n+10 | wc -l`
+###### option 2 `bcftools view -h file.vcf.gz | tail -n1 | cut -f10- | wc -w`
 
 ##### grep with colour
 `gzip -dc RefChr20.vcf.gz | grep -F "0.578,0.414" --color`
 
 ##### some `less` and `ls` arguments
-`less -S` #print lines nicely
-`ls -a` #see hidden files too
-`ls -l` #see permissions
-`ls -lh` #see file size
+###### print lines nicely `less -S` 
+###### see hidden files too `ls -a`
+###### see permissions `ls -l` 
+###### see file size `ls -lh`
 
 ##### find in the current directory file.txt
 `find . -name "file.txt"`
 
 ##### disc usage 
-`du -hc *.bgz` #human readable total size of the bgz files
-`df -lm .` #in the folder
+###### human readable total size of the .bgz files `du -hc *.bgz` 
+###### within the current directory `df -lm .`
 
 ##### initialize environment before `sort` commands that are followed by `join`
 `LC_ALL=C; export LC_ALL`
@@ -45,7 +43,7 @@
 
 ##### Beagle output extract at position 33514465
 `zgrep -E "CHROM|33514465" chr20.vcf.gz  | cut -f 2,4,5,9,14`
-#Note: for genotypes 0=Ref; 1=Alt
+###### Note: for genotypes 0=Ref; 1=Alt
 
 ##### count how many lines in a vcf.gz, not including lines that start with #
 `zgrep -vE ^# file.vcf.gz | wc -l`
