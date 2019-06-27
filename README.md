@@ -1,6 +1,6 @@
 # useful_unix_one_liners_and_more
 
-##### Find replace; e.g. Find X, replace with 23
+##### find replace; e.g. find X, replace with 23
 `sed -i 's/X/23/' file.txt` 
 
 ##### change space to tab
