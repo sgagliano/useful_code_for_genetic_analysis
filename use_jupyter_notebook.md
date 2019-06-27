@@ -1,6 +1,6 @@
 Jupyter
 
-####on the cluster####
+##on the cluster
 #`pip install jupyter`
 #`pip install <any other packages you may need>`
 
@@ -10,7 +10,7 @@ Jupyter
 `jupyter notebook --no-browser --port 9876`
 #You can use any port you want. jupyter might fail to start if port is used by some other program. If this happens, then just try out any other number. Don’t use well known port such as 20,22,80,5000 and similar. Port number can go up to ~65000
 
-####on your personal computer's terminal#### 
+##on your personal computer's terminal 
 `ssh -v -N -L 9876:localhost:9876 username@cluster_ip_address` 
 #If port was not already in use on you local machine, then you should see a message like 'Local forwarding listening on 127.0.0.1 port 9876.’. If you see a message like 'Could not request local forwarding.’, then try another port.
 
