@@ -1,13 +1,15 @@
 #DESCRIPTION
 #Make a Manhattan plot; code slightly adapted from: https://statgen.sph.umich.edu/wiki/R:_Making_a_Manhattan_Plot
 
-#run like so
+#INSTRUCTONS
+#open an R terminal and run like so:
 #source('manhattan.plot-blue.R')
-#dd<-read.table("MyFile.txt", h=T, as.is=T)
+#dd<-read.table("MyFile.txt", h=T, as.is=T) #the summary statistics, three required columns: chromsosome, position and p-value
 #png("MyManhattan.png", width=950, height=500)
 #print(manhattan.plot(dd$chr, dd$pos, dd$pvalue, sig.level=5e-8)) #where chr, pos and pvalue are the appropriate column headers in dd
 #dev.off()
 
+##CODE STARTS HERE
 library(lattice)
 manhattan.plot<-function(chr, pos, pvalue, 
         sig.level=NA, annotate=NULL, ann.default=list(),
