@@ -1,5 +1,6 @@
 #DESCRIPTION
 #Make a Manhattan plot; code slightly adapted from: https://statgen.sph.umich.edu/wiki/R:_Making_a_Manhattan_Plot
+#ensure chromsome column is numeric, i.e. no chr prefix
 
 #INSTRUCTONS
 #open an R terminal and run like so:
