@@ -56,3 +56,6 @@
 
 ##### view line for a variant (e.g. chr22:16188597) in tabixed vcf.gz
 `tabix Mytabixedfile.vcf.gz chr22:16188597 | less -S` 
+
+####Some Useful GWAS Scripts in the Code section; also more in these repositories:
+https://github.com/ilarsf/gwasTools (and forked version: https://github.com/bnwolford/gwasTools)
