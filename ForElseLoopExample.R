@@ -7,3 +7,16 @@ x[i,5]<-x[i,4]*-1 #make the value of column 5 the value of column 4 times -1
 else
 x[i,5]<-x[i,4] #else make the value of column 5 the value of column 4
 }
+
+#another example with 2 loops and incrementing the index
+x<-read.table("batch.txt", as.is=T, h=T)
+index=1
+for (j in seq(from=11,to=91,by=1)){
+	index=index+1	
+	for (i in 1:nrow(x)) { 
+		if (x[i,1]==j) 
+		x[i,index]<-1 
+		else
+		x[i,index]<-0	
+		}
+}
