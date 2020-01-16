@@ -8,7 +8,8 @@ The wiki is a great starting place: https://github.com/bulik/ldsc/wiki
 Starting point: summary statistics and basic info about what’s in it (i.e. numbers of cases and controls, effect size, etc.). 
 Note that it is fine if this file is gzipped. 
 
-Step #1: Convert the summary statistics file into the LD score regression format (only uses HapMap3 SNPs with MAF>5%) using their provided munge_sumstats.py script.
+#### Step #1: 
+Convert the summary statistics file into the LD score regression format (only uses HapMap3 SNPs with MAF>5%) using their provided munge_sumstats.py script.
 
 Include the options that are relevant for your data. For all the options type in python2 munge_sumstats.py --help
 
@@ -23,21 +24,27 @@ This will create 2 files:
 `PrefixForMyOutput.sumstats.gz`, which is the file that you will use in all subsequent LD score analyses
 `PrefixForMyOutput.log`, which lists the command and all the processing steps conducted to create the sumstats.gz file.
 
-Step #2: compute heritability (and LD score regression intercept). Note this is using LD scores pre-computed using 1000Genomes, EUR population.
+#### Step #2: 
+Compute heritability (and LD score regression intercept). Note this is using LD scores pre-computed using 1000Genomes, EUR population.
 
+```
 python2 ldsc.py \
 --h2 PrefixForMyOutput.sumstats.gz \
 --ref-ld-chr eur_w_ld_chr/ \
 --w-ld-chr eur_w_ld_chr/ \
 --out Disease_h2
+```
 
 Check the log file `Disease_h2.log`. Near the bottom you will see `Intercept` (i.e. the LD score regression intercept) and there is also `Lambda GC` for comparison.
 The heritability is listed on the observed scale. To convert the heritability to the liability scale you need the prevalence of the trait in the sample as well as in population.
 
-Step #3: compute genetic correlation between two traits.
+#### Step #3: 
+Compute genetic correlation between two traits.
 
+```
 python2 ldsc.py \
 --rg PrefixForTrait1.sumstats.gz, PrefixForTrait2.sumstats.gz \
 --ref-ld-chr eur_w_ld_chr/ \
 --w-ld-chr eur_w_ld_chr/ \
 --out Trait1_Trait2_rg
+```
