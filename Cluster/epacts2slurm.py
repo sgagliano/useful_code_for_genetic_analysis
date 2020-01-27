@@ -1,3 +1,16 @@
+##Code from Daniel Taliun
+
+##pipeline description
+#run epacts script without run flag, so just makes the make file
+#./Script-epacts-LDL.sh
+
+#set up scripts
+#python epacts2slurm.py --in-makefile epacts-LDL.Makefile --job-name LDL --max-mem 4000
+
+#submit to queue 
+#./run.LDL.sh 
+
+###
 import os
 import stat
 import sys
