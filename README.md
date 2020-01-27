@@ -63,3 +63,10 @@ https://github.com/ilarsf/gwasTools (and forked version: https://github.com/bnwo
 #### RANDOM
 online tool to merge the multiple JPEGs together https://www.imgonline.com.ua/eng/combine-two-images-into-one.php
 
+visualization of a table of data, Sparkler: http://bipolar-project.sph.umich.edu/html/sparkler/ 
+
+LZ load your own data: https://abought.github.io/locuszoom-tabix/ (you'll need to bgzip/tabix your GWAS files to use)
+
+quick look-up of heritability estimates from twin studies: http://match.ctglab.nl/#/home
+
+GWAS atlas: https://atlas.ctglab.nl
