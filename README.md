@@ -19,6 +19,13 @@
 ##### grep with colour
 `gzip -dc RefChr20.vcf.gz | grep -F "0.578,0.414" --color`
 
+##### for loops
+`for $i in trait1 trait2 trait3; do; --insert code here--; done`
+
+`for $CHR in` \`seq 1 22\`; `do; --insert code here--; done`
+
+`for ((i=1;i<=22;i++)); do; --insert code here--; done` #start at 1, go to 22, increment by 1
+
 ##### some `less` and `ls` arguments
 ###### print lines nicely `less -S` 
 ###### see hidden files too `ls -a`
