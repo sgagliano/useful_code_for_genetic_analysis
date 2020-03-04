@@ -16,6 +16,9 @@
 ###### option 1 `gzip -dc file.vcf.gz | grep "^#CHROM" -m1 | tr "\t" "\n" | tail -n+10 | wc -l`
 ###### option 2 `bcftools view -h file.vcf.gz | tail -n1 | cut -f10- | wc -w`
 
+##### split a file (cmds.txt) into separate files of 1000 rows each, add numeric suffixes starting at 0 to file output name
+`split -l 1000 -d cmds.txt cmds.split.` 
+
 ##### grep with colour
 `gzip -dc RefChr20.vcf.gz | grep -F "0.578,0.414" --color`
 
