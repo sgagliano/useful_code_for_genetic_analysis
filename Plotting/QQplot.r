@@ -1,3 +1,6 @@
+##example usage
+#Rscript --vanilla QQplot.r --input results-ac10.txt --prefix results-ac10 --maf AF_Allele2 --pvalue p.value --maintitle="Case-control, AC>10"
+
 ##WRITTEN BY LARS FRITSCHE
 options(stringsAsFactors=F)
 library("plotrix")
