@@ -80,3 +80,5 @@ LZ load your own data: https://abought.github.io/locuszoom-tabix/ (you'll need t
 quick look-up of heritability estimates from twin studies: http://match.ctglab.nl/#/home
 
 GWAS atlas: https://atlas.ctglab.nl
+
+Pattern recognition and machine learning: https://github.com/ctgk/PRML/blob/master/README.md
