@@ -69,6 +69,7 @@
 
 #### Some Useful GWAS Scripts in the Code section; also more in these repositories:
 https://github.com/ilarsf/gwasTools (and forked version: https://github.com/bnwolford/gwasTools)
+https://github.com/hyunminkang/apigenome Hyun Min Kang's Big data genomics analysis libraries & tools
 
 #### RANDOM
 online tool to merge the multiple JPEGs together https://www.imgonline.com.ua/eng/combine-two-images-into-one.php
