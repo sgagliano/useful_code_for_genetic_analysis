@@ -69,12 +69,12 @@
 
 #### change chr header in a vcf
 `bcftools annotate --rename-chrs ../files/chr_rename.txt` where `chr_name.txt` contains a list like
-1 chr1
+```1 chr1
 2 chr2
 3 chr3
 4 chr4
 5 chr5
-6 chr6
+6 chr6```
 
 #### Some Useful GWAS Scripts in the Code section; also more in these repositories:
 https://github.com/ilarsf/gwasTools (and forked version: https://github.com/bnwolford/gwasTools)
