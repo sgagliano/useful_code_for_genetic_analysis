@@ -43,7 +43,7 @@ Compute genetic correlation between two traits.
 
 ```
 python2 ldsc.py \
---rg PrefixForTrait1.sumstats.gz, PrefixForTrait2.sumstats.gz \
+--rg PrefixForTrait1.sumstats.gz,PrefixForTrait2.sumstats.gz \
 --ref-ld-chr eur_w_ld_chr/ \
 --w-ld-chr eur_w_ld_chr/ \
 --out Trait1_Trait2_rg
