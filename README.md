@@ -68,7 +68,7 @@
 `tabix Mytabixedfile.vcf.gz chr22:16188597 | less -S` 
 
 #### change chr header in a vcf
-`bcftools annotate --rename-chrs ../files/chr_rename.txt` where `chr_name.txt` contains a list like
+`bcftools annotate --rename-chrs chr_rename.txt` where `chr_name.txt` contains a list like
 ```
 1 chr1
 2 chr2
