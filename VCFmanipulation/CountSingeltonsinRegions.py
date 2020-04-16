@@ -1,7 +1,8 @@
+#python2
 #Run like so
 #for CHR in `seq 1 22`
 #do
-#        sbatch --mem=8000 --job-name=count${CHR} --time=50:00:00 --partition=main --wrap="python singletons_per_individual.py --in chr${chrom}.bcf --individuals sample.list --bed ../data/chr${CHR}.txt --out ../output/chr${CHR}.out" -o ../logs/singgenes_${CHR}.log
+#        sbatch --mem=8000 --job-name=count${CHR} --time=50:00:00 --partition=main --wrap="python singletons_per_individual.py --in chr${CHR}.bcf --individuals sample.list --bed ../data/chr${CHR}.txt --out ../output/chr${CHR}.out" -o ../logs/singgenes_${CHR}.log
 #done
 
 
