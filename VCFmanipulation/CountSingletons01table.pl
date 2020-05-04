@@ -3,7 +3,7 @@
 ###Example commands to run:
 #convert bcf to sav:
 #sav import --index chr10.filtered.gtonly.minDP0.minAC1.bcf chr10.filtered.gtonly.minDP0.minAC1.sav
-#time perl a01.pl chr10:115088370-115953983
+#time perl CountSingletons01table.pl chr10:115088370-115953983
 #example output: 
 #        cnt1s	cnts0s	cnt1s/(cnt1s+cnt1s)
 #Group1	5468	2287	0.70509
