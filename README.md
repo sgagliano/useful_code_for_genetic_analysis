@@ -41,6 +41,7 @@
 ##### disc usage 
 ###### human readable total size of the .bgz files `du -hc *.bgz` 
 ###### within the current directory `df -lm .`
+###### total size of directory (e.g. all the files within) `df -sh <directory> .`
 
 ##### initialize environment before `sort` commands that are followed by `join`
 `LC_ALL=C; export LC_ALL`
@@ -77,6 +78,9 @@
 5 chr5
 6 chr6
 ```
+
+#### rsID to chr:bp (GRCh37 or GRCh38) and vice versa
+SNPnexus https://www.snp-nexus.org/v4/
 
 #### Some Useful GWAS Scripts in the Code section; also more in these repositories:
 https://github.com/ilarsf/gwasTools (and forked version: https://github.com/bnwolford/gwasTools)
