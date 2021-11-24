@@ -79,6 +79,12 @@
 6 chr6
 ```
 
+#### Compute Beta (and correpsonding SE) using Z-score (z), effect allele freq (p), and sample size (n):
+Beta = z / sqrt(2p(1− p)(n + z^2)) and SE =1 / sqrt(2p(1− p)(n + z^2))
+
+SE =1 / sqrt(2p(1− p)(n + z^2))
+See Zhu, Z., Zhang, F., Hu, H. et al. Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets. Nat Genet 48, 481–487 (2016). https://doi.org/10.1038/ng.3538
+
 #### rsID to chr:bp (GRCh37 or GRCh38) and vice versa
 SNPnexus https://www.snp-nexus.org/v4/
 
