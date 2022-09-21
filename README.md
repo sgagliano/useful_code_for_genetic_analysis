@@ -93,6 +93,9 @@ https://github.com/ilarsf/gwasTools (and forked version: https://github.com/bnwo
 https://github.com/hyunminkang/apigenome Hyun Min Kang's Big data genomics analysis libraries & tools
 <p>Carlo Sidore's Sequence Analysis Tutorial: https://genome.sph.umich.edu/wiki/Tutorial:_Low_Pass_Sequence_Analysis
 
+#### Compare two columns and output specifying whether they are the same or different
+awk '{ if ($2 == $3) { print "same"; } else { print "different"; } }' < input.txt > output.txt
+
 #### RANDOM
 online tool to merge the multiple JPEGs together https://www.imgonline.com.ua/eng/combine-two-images-into-one.php
 
