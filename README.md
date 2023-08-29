@@ -98,8 +98,8 @@ awk '{ if ($2 == $3) { print "same"; } else { print "different"; } }' < input.tx
 
 ### Genetic Power Calculators
 #Binary Traits: https://csg.sph.umich.edu/abecasis/cats/gas_power_calculator/
-<p>#Quantiative Traits: https://genome.sph.umich.edu/wiki/Power_Calculations:_Quantitative_Traits
-<p>#Code: https://www.mv.helsinki.fi/home/mjxpirin/GWAS_course/material/GWAS3.html
+<p>#Quantiative Traits: https://genome.sph.umich.edu/wiki/Power_Calculations:_Quantitative_Traits</p>
+<p>#Code: https://www.mv.helsinki.fi/home/mjxpirin/GWAS_course/material/GWAS3.html</p>
 
 
 #### RANDOM
