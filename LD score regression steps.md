@@ -12,6 +12,8 @@ A minimal set of files necessary to run LDSC are available for free acecss at ht
 baselineLF_v2.2.UKB.tar.gz is available for free access at https://broad-alkesgroup-ukbb-ld.s3.amazonaws.com/UKBB_LD/baselineLF_v2.2.UKB.tar.gz as
 part of the AWS Open Data Project.
 
+w_hm3.snplist in this directory
+
 #### Resources: 
 The wiki is a great starting place: https://github.com/bulik/ldsc/wiki
 
