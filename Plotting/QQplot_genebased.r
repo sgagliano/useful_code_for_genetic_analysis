@@ -1,4 +1,9 @@
 ##FROM LARS FRITSCHE
+
+#Run example:
+#Rscript QQplot_genebased.r --pvalue p.value --maf AF_Allele2 --input myinput.txt --prefix Trait --ntests 1000000 --maintitle "QQ plot title"
+
+
 options(stringsAsFactors=F)
 library("plotrix")
 library("data.table")
