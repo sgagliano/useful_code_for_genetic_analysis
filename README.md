@@ -87,6 +87,7 @@ See Zhu, Z., Zhang, F., Hu, H. et al. Integration of summary data from GWAS and 
 
 #### rsID to chr:bp (GRCh37 or GRCh38) and vice versa
 SNPnexus https://www.snp-nexus.org/v4/
+Command line: ‘convert_loc_to_rs()’ from: https://github.com/RHReynolds/colochelpR
 
 #### Some Useful GWAS Scripts in the Code section; also more in these repositories:
 https://github.com/ilarsf/gwasTools (and forked version: https://github.com/bnwolford/gwasTools)
