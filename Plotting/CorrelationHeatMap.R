@@ -1,5 +1,5 @@
 #DESCRRIPTION
-#plot the correlatino
+#plot the correlation
 
 library(corrplot)
 
